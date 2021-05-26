@@ -1,0 +1,21 @@
+.message {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 0;
+  visibility: hidden;
+}
+
+/******* alert types *****/
+.error {
+  background: #f32013;
+  visibility: visible;
+}
+.success {
+  background: #4bb543;
+  visibility: visible !important;
+}

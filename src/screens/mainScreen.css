@@ -1,0 +1,213 @@
+.main-container {
+  margin: 0px auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.record-input {
+  height: 600px !important;
+}
+
+.record-input,
+.record-display {
+  border-radius: 10px;
+  padding: 20px 0;
+  margin: 30px 0;
+  -webkit-box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.9);
+}
+.record-input > h2,
+.record-display > h2 {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 22px;
+}
+.record-input {
+  color: #000;
+  background: #f0f0f0;
+  padding: 0 50px;
+  padding-top: 25px;
+}
+.record-display {
+  background: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+/** record input **/
+.entry-form {
+  padding: 10px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+form label {
+  font-weight: 500;
+  opacity: 0.7;
+}
+form label,
+form input {
+  display: block;
+  outline: none;
+  border-radius: 25px;
+  border: none;
+}
+form input[type="text"],
+form input[type="number"] {
+  color: #000;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px 18px;
+  margin: 12px 0;
+  transition: all 0.5s ease;
+}
+form input:focus {
+  background: #252525;
+  color: #fff;
+}
+
+/**********************************************/
+.input-btns {
+  text-align: center;
+}
+
+/*** utility button styling ***/
+
+#submit-btn span,
+#cancel-btn span {
+  padding-right: 5px;
+}
+
+/*****************************************/
+
+.record-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.record-display {
+  padding: 30px 40px;
+  padding-top: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info button {
+  margin-right: 0;
+}
+
+.info-input {
+  display: none;
+}
+
+.record-display h2 {
+  color: #000;
+}
+
+.signout {
+  border: none;
+}
+
+/*********** Media Queries *************/
+
+@media screen and (max-width: 1380px) {
+  .record-display {
+    padding: 30px 15px;
+  }
+  .info h2 {
+    margin-left: 20px;
+  }
+  .info button {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .info-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .info-result {
+    display: none;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .info {
+    flex-direction: column;
+  }
+  .info button {
+    margin: 15px auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .btns {
+    flex-direction: column;
+  }
+  #edit-btn,
+  #delete-btn {
+    margin: 5px 0;
+  }
+
+  .record-display h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* record Item */
+.record-el {
+  display: block;
+  padding: 4px 0;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.name {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#labelling {
+  font-weight: 500;
+}
+.record-item {
+  color: #000;
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin: 15px 10px;
+  background: #fff;
+  box-shadow: 0 0 6px #777;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#delete-btn span,
+#edit-btn span {
+  padding-right: 5px;
+}
