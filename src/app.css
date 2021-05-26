@@ -10,10 +10,16 @@
 :root {
   --primary-color: #eb55fc;
 }
+html,
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 @keyframes slideInFromRight {

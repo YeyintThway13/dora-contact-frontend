@@ -25,7 +25,7 @@ const MainScreen = (props) => {
 
   const { name, token } = useSelector((state) => state.userSignin.userInfo);
 
-  const { errorSignout } = useSelector((state) => state.userSignout);
+  const { loading, errorSignout } = useSelector((state) => state.userSignout);
 
   const dispatch = useDispatch();
   const signoutHandler = () => {
@@ -129,6 +129,7 @@ const MainScreen = (props) => {
               Sign Out
             </button>
           </div>
+          {loading && <Loading></Loading>}
           <h2>Contact Details</h2>
           <div className="entry-form">
             <form>
@@ -183,6 +184,7 @@ const MainScreen = (props) => {
             </button>
           </div>
           {errorSignout && <MessageBox>{errorSignout}</MessageBox>}
+          {loading && <Loading></Loading>}
           <h2>Available Contacts:</h2>
 
           {loadingResults && <Loading></Loading>}

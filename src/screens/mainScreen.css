@@ -145,8 +145,12 @@ form input:focus {
   }
 
   .main-container {
+    padding: 15px 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+  .record-input {
+    height: 750px !important;
   }
 }
 
